@@ -3,15 +3,7 @@ import pickle
 
 text_transformer = pickle.load(open('text_transformer.pkl','rb'))
 model = pickle.load(open('pipeline_rf_etc_bnb.pkl','rb'))
-try:
-    with open(file_path, 'rb') as f:
-        text_transformer = pickle.load(f)
-except FileNotFoundError:
-    st.error("The file was not found.")
-except pickle.UnpicklingError:
-    st.error("Failed to unpickle the file. It may be corrupted.")
-except Exception as e:
-    st.error(f"An unexpected error occurred: {str(e)}")
+
 
 st.title("Email/SMS Spam Classifier")
 
