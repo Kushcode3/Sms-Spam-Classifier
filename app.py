@@ -1,12 +1,12 @@
 import streamlit as st
 import pickle
 
-#text_transformer = pickle.load(open('text_transformer.pkl','rb'))
-#model = pickel.load(open('pipeline_rf_etc_bnb.pkl','rb'))
+text_transformer = pickle.load(open('text_transformer.pkl','rb'))
+model = pickel.load(open('pipeline_rf_etc_bnb.pkl','rb'))
 
 st.title("Email/SMS Spam Classifier")
 
-#input_sms = st.text_area("Enter the message")
+input_sms = st.text_area("Enter the message")
 
 if st.button('Predict'):
 
