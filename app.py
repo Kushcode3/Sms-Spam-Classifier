@@ -1,16 +1,5 @@
 import streamlit as st
 import pickle
-import string
-import re
-import scikit-learn
-import numpy as np
-import pandas as pd
-import nltk
-from nltk.corpus import stopwords
-from nltk.stem.porter import Porterstemmer
-
-ps = PorterStemmer()
-
 
 text_transformer = pickle.load(open('text_transformer.pkl','rb'))
 model = pickel.load(open('pipeline_rf_etc_bnb.pkl','rb'))
