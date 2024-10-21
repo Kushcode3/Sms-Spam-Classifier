@@ -8,6 +8,7 @@ from nltk.stem import PorterStemmer
 import string
 nltk.download('punkt_tab')
 nltk.download('stopwords')
+ps = PorterStemmer()
 
 def transform_text(text):
     text = re.sub('[^a-zA-Z]', ' ', text) # replacing all non-alphabetic characters with a space
