@@ -1,3 +1,8 @@
 streamlit
 nltk
 sklearn
+pandas
+numpy
+pickle
+re
+imbalanced-learn
